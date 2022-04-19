@@ -1,0 +1,85 @@
+<!--Otras tres etiquetas de contenido son: <section> <article> <aside>
+    
+    section: Es un contenedor genérico que agrupa contenido que esta relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total usaremos section
+
+    article: Es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendría sentido por sí mismo.
+
+    aside: Se utiliza para representar contenido relacionado pero que no forma parte del contenido principal.
+
+    Anidamiento:
+    1-Un section puede contener articles, por ejemplo si tenemos varios articulos que hablan sobre etiquetas HTML deben ir en un section, ya que es contenido relacionado entre sí, y los articles serían contenido independiente porque podríamos leer uno sin haber leído el resto, y seguiría teniendo sentido.
+    
+    2-El articles es definido como un componente de la página de contenido independiente, esto implica que esta etiqueta pueda tener un header y un footer propios.
+   
+    3-También existe el caso en que un article contenga varias secciones, el artículo independiente podría ser navegadores y este contener dentro secciones como navegadores más utilizados en el 2022.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Section vs Article</title>
+  </head>
+  <body>
+    <!--Ejemplo 1-->
+    <header>
+      <h1>NOTICIAS NACIONALES</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Section como contenedor</h2>
+        <section>
+          <h3>Noticias destacadas</h2>
+          <!--cada una de las noticias sería un article-->
+          <article>
+            <header><h4>Noticia 1</h4></header>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium mollitia dolore soluta quam dolorem odio itaque
+              aliquam? Quidem soluta perspiciatis amet. Fugiat, quia eius fugit
+              cupiditate harum velit deserunt incidunt.
+            </p>
+            <footer>Madrid, España</footer>
+            <!--El header y el footer no son contenidos obligatorios dentro de un article, pero como se trata de contenido independiente está permitido.-->
+          </article>
+          <article>
+            <h4>Noticia 2</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium mollitia dolore soluta quam dolorem odio itaque
+              aliquam? Quidem soluta perspiciatis amet. Fugiat, quia eius fugit
+              cupiditate harum velit deserunt incidunt.
+            </p>
+          </article>
+          <article>
+            <h4>Noticia 3</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium mollitia dolore soluta quam dolorem odio itaque
+              aliquam? Quidem soluta perspiciatis amet. Fugiat, quia eius fugit
+              cupiditate harum velit deserunt incidunt.
+            </p>
+          </article>
+        </section>
+      </section>
+      
+          <h2>Article conteniendo section</h2>
+          <article>
+              <h2>Navegadores más utilizado en 2022</h2>
+              <section>
+                  <header>
+                  <h3>Chrome</h3></header>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facere voluptates aperiam neque ex fugiat accusamus ab ipsam dolores, quos eius mollitia odit atque porro eligendi nesciunt nisi laudantium rem!</p>
+                  <footer>Creado por Google</footer>
+              </section>
+              <section>
+                  <h3>Firefox</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus officia aperiam optio quibusdam cumque assumenda labore temporibus sequi consectetur, ipsa fugit enim recusandae sed earum est deserunt tenetur mollitia aut.</p>
+              </section>
+          </article>
+      </section>
+      <!--Ambas opciones son válidas y aprobadas por la W3C-->
+    </main>
+    <footer>Emitiendo noticias desde el año 1994</footer>
+    <!--En caso de querer ver si nuestra página web contiene errores en términos de las reglas de estructura y la semántica html podemos visitar esta página: https://validator.w3.org en la cual podremos validar nuestro html-->
+  </body>
+</html>

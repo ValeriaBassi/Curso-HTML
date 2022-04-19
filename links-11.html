@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!--Enlaces, también conocidos como links. Su objetivo es conectar una página web con otra página web, con un recurso tanto interno como externo, o con otro sitio web.
+
+    Tienen el atributo obligatorio href, donde le especificamos la ruta del recurso o sitio que queremos obtener.
+
+    También tiene el atributo target, que configura como queremos visualizar el recurso o sitio web que solicitamos-->
+
+  <body>
+    <h1>Home</h1>
+    <a href="practice-7.html">Ir a la práctica de HTML</a> <br>
+    <a href="https://www.google.com.ar/?hl=es">Ir a google</a>
+    
+    
+    <!--La a viene de ancla-->
+
+    <!--Rutas absolutas y rutas relativas
+    Rutas absolutas: Tienen un protocolo, http o https y son únicas en la red. Se suelen utilizar para rutas externas.
+
+    Rutas relativas: Pueden ser relativas al punto donde nos encontramos o relativas a la raíz del proyecto.
+
+    No usa protocolo.
+
+    Si el recurso se encuentra al mismo nivel (en la misma carpeta) pondremos unicamente el nombre del archivo.
+
+    Si necesitamos salir de la carpeta actual usaremos ../ y se pone uno por cada nivel (carpeta de la que queramos salir)
+    
+    <a href="../archivo.html">Salir de la carpeta</a>
+    <a href="/headings-paragraphs-2.html">Ir a la raíz del proyecto</a>
+    <a href="/">Index</a> Si pongo solo la barra, me va a carga el index.html porque es el archivo que por defecto van a intentar cargar los servidores y todos los navegadores. Si le cambio el nombre al index, me va a mostrar en el navegador una lista de archivos para que yo haga click en el que necesito, por eso es importante que se llame index.html.
+    -->
+
+    <!--Atributos de los enlaces
+
+        href: es la ruta del recurso o sitio web que queremos obtener.
+
+        target: configura como queremos visualizar el recurso o sitio web que solicitamos. Define donde se abrirá el recurso o sitio web. Por norma general siempre que uses rutas absolutas pondras como valor "_blank", el otro valor que existe es el "_self" pero es el valor por defecto. El valor "_blank" abre el recurso en una nueva ventana.
+
+        download: es para descargar el archivo. Atributo booleano. IMPORTANTE, el recurso debe estar en tu mismo servidor. El recurso no se va a abrir sino que se va a descargar.
+        <a href:"https://google.com" download>Link de descarga</a> no hace falta ponerle un valor porque por defecto es true. En este caso no descargaria el html porque no esta dentro de mi servidor, es una ruta absoluta.
+        -->
+
+  </body>
+</html>

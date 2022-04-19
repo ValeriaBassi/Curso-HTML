@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Inline elements</title>
+  </head>
+
+  <body>
+    <h1>Elementos de línea</h1>
+    <!--
+            em: Enfatizar
+            strong: Negrita (más enfatizado)
+            small: Menos enfasis que el texto normal
+            br: Forzar un salto de línea
+            wbr: Salto de línea si hiciera falta
+            time: Se usa para representar un contenido de fecha y hora
+            i: italic
+            b: bold
+            u: underline
+            sup: superíndice
+            sub: subíndice
+        -->
+    <p>
+      <em>El dinero</em> es importante pero <strong>la salud</strong> es lo más
+      importante. <small>Saludos!</small>
+    </p>
+    <!--Con esto no estamos poniendo cursiva ni negrita, para eso usamos css, con esto le estamos diciendo al NAVEGADOR que es más importante-->
+    <p>
+      Lorem ipsum dolor sit amet, <br />
+      <!--Si le damos a format document, VSC nos pone una barra en la etiqueta <br/ >, esto no es incorrecto según la W3C, pero es algo que se hacía en documento XHTML, que sería la versión anterior a HTML5. No es un fallo ni una mala práctica, pero si queremos respetar las especificacion es de HTML5, debemos hacer click derecho, dar formato al documento con, y en lugar de elegir prettier, elegimos características del lenguaje HTML o a configurar el formateador predeterminado para cambiarlo definitivamente-->
+      consectetur adipisicing elit. Aperiam alias reiciendis deserunt aliquam
+      hic dolorum voluptatibus at mollitia exercitationem tenetur quaerat,
+      assumenda nobis suscipit adipisci modi porro laboriosam facere cumque!
+    </p>
+    <!--El <br> se utiliza en el caso por ejemplo de una dirección, en la cual los saltos de línea son importantes, o en el caso de un poema o algún tipo de texto en el que el salto de línea sea relevante.
+    NO SE DEBE UTILIZAR para dar separación entre dos elementos, esto es estético por lo que se encarga css, ESTO ES UNA MUY MALA PRACTICA-->
+
+    <p>
+      http://127.0.0.1:5500/<wbr />cursos/<wbr />html/<wbr />la_concha_de_tu_hermana/<wbr />la_concha_de_tu_hermana/<wbr />la_concha_de_tu_hermana/<wbr />inline-elements-8.html
+    </p>
+    <!--Si nosotros quisieramos por ejemplo que una URL cortara o hiciera saltos de línea en puntos concretos en caso de no entrar en la pantalla, utilizariamos <wbr>, es una poronga porque te toma los guiones como puntos de salto (ver online)-->
+    <h2>Elemento time</h2>
+    <p>Esto es un articulo que se publico a una fecha y hora específica</p>
+    <time>24/10/2022 10:35</time>
+    <!--El navegador esta entendiendo que esto esta representando una fecha y por lo tanto le dará la importancia semántica que debería tener la fecha y la hora. Sería válido si se tratara solo de la fecha o solo de la hora, no es necesario que este completo.-->
+
+    <!-- Las últimas tres etiquetas: i, b , u
+    contradicen todo lo que venimos hablando xD
+estas tres etiquetas de utilizan para dar estilos y solo sirven para eso-->
+    <p><i>italica</i></p>
+    <p><b>bold</b></p>
+    <p><u>underline</u></p>
+    <!--Estas etiquetas aparecieron prácticamente al principio de html y se siguen manteniendo, es posible que en algún momento desaparezcan. De todas formas es mejor usar CSS. Hay un caso en el que la etiqueta <i>, si es importante por ejemplo cuando estamos trabajando con librerías de íconos como font awesome.
+    Un ejemplo de el código de un ícono de font awesome: <i class="fa-solid fa-bridge-suspension"></i>-->
+
+    <p> 4 elevado al cuadrado se representa así: 4<sup>2</sup></p> <!--superíndice-->
+    <p>Agua oxigenada tiene la fórmula: H<sub>2</sub>O<sub>2</sub></p> <!--subíndice-->
+
+    <!--Estas dos últimas etiquetas no se utilizan mucho, pero merece la pena conocerlas para utilizarlas en casos particulares.-->
+
+    
+  </body>
+</html>
