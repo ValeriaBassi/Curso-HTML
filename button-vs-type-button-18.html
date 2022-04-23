@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--
+    input type:
+        button-> Se comporta igual que un botón <button>
+        submit -> Se utiliza para enviar un formulario.
+
+        date -> Se utiliza para especificar una fecha.
+        datetime -> Se utiliza para especificar una fecha y hora. Obsoleto.
+        datetime-local -> Se utiliza para especificar una fecha y hora. No funciona en firefox.
+        time -> Se utiliza para especificar una hora.
+               TIP: Se recomienda usar date y time para seleccionar fecha y hora.
+        week -> Se utiliza para especificar una semana. Número de semana del año.
+        month -> Se utiliza para especificar un mes.
+
+        search -> Se utiliza para especificar una búsqueda. Para las barras de búsqueda.
+        email -> Se utiliza para especificar un correo electrónico.
+        tel -> Se utiliza para especificar un teléfono.
+        password -> Se utiliza para especificar una contraseña.
+        url -> Se utiliza para especificar una URL.
+        En aspecto son exactamente iguales a los input text, pero en el móvil se ven de maneras diferentes, el teclado cambia.
+        
+        hidden -> Se utiliza para ocultar un campo. Puede contener un valor pero no se mostrará.
+        
+        number -> Se utiliza para valores numéricos.	
+        range -> Se utiliza para especificar un rango.
+        reset -> Se utiliza para reiniciar un formulario.
+        color -> Se utiliza para especificar un color.
+        text -> Se utiliza para especificar un texto. Es el valor por defecto.
+        
+        
+-->
+  <body>
+    <h1>Button vs type button</h1>
+    <form>
+      <input type="text" />
+      <input type="button" value="Enviar" />
+      <!--En un input de tipo botón, el texto se debe establecer mediante el atributo value-->
+      <button>Enviar</button>
+      <!--Visualmente se parecen pero un input de type button no sirve para enviar el formulario, podemos darle un comportamiento mediante javascript, para que envie el formulario el type debe ser submit-->
+    </form>
+    <h1>inputs para fechas</h1>
+
+    <h2>input date</h2>
+    <form>
+      <input type="date" />
+    </form>
+
+    <h2>datetime-local</h2>
+    <form>
+      <input type="datetime-local" />
+      <!--Probar abrir el puerto en Firefox-->
+    </form>
+
+    <h2>Date y time</h2>
+    <form>
+      <input type="date" />
+      <input type="time" />
+    </form>
+    <!--Esto si funciona en firefox-->
+
+    <h2>input month</h2>
+    <form>
+      <input type="month" />
+    </form>
+
+    <h2>input week</h2>
+    <form>
+      <input type="week" />
+    </form>
+    <!--La verdad no se me ocurre un contexto en el cual utilizarlo, pero existe-->
+
+    <h1>Inputs para móviles</h1>
+    
+    <form action="">
+      <ul>
+        <li><label>Search</label><input type="search" /></li>
+        <li><label>Tel</label> <input type="tel" /></li>
+        <li><label>Password</label> <input type="password" /></li>
+        <li><label>URL</label> <input type="url" /></li>
+        <li>
+          <label>Email</label>
+          <input type="email" />
+        </li>
+      </ul>
+      <button>Enviar formulario</button>
+    </form> <!--Probar llenar los campos-->
+    <!--También en lugar de hacer una lista, podemos meter cada input en un div-->
+
+    <h1>Inputs extra</h1>
+    <form>
+        <div><input type="number" /></div>
+        <div><input type="range" step="5" min="0" max="20"/></div> <!--step es el paso-->
+        <div><input type="reset" /></div> <!--Se coloca generalmente al lado del submit-->
+        <div><input type="color" /></div>
+        <div><input type="text" /></div> <!--Equivale a poner nada, ya que es el valor por defecto del input-->
+        <div><input type="hidden"></div> <!--Oculta el campo hasta que lo cambiemos a un input text por ejemplo-->
+              
+  </body>
+</html>

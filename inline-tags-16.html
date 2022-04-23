@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<!--
+    span -> Es un contenedor de línea, equivalente a div, se suele usar para encerrar palabras o pequeños textos y darles estilos a través de CSS o para localizarlos a través de JavaScript. Semánticamente no significa nada.
+
+    q -> Es equivalente a blockquote, significa quote (sin el block porque es de línea), Sirve para poner citas pero en línea.
+
+    code -> Sirve para encerrar código que queremos representar visualmente. Suele ir unido con la etiqueta de bloque <pre>.
+
+    Entidades especiales en HTML -> Código ASCII
+    https://ascii.cl/es/codigos-html.htm
+-->
+<body>
+    <h1>Otras etiquetas de línea</h1>
+
+    <p>Lorem ipsum dolor sit amet <span>adipisicing elit</span> . Molestiae tempore magni eum recusandae beatae veniam odio incidunt minus ea voluptates non, nesciunt repellat cum in veritatis porro, voluptatum voluptatibus aperiam?</p>
+
+    <q cite="Link">Yo soy Ironman</q>
+
+    <pre>
+        <code>
+            span {
+                color: red;
+            }
+        </code> 
+    </pre> <!--Le estamos diciendo al navegador que esto es código-->
+
+    <p>La etiqueta <code></h1></code> se utiliza para representar títulos de primer nivel</p> <!--Si hacemos esto no se representarán visualmente el mayor que y menor que de la etiqueta h1, sino que nos convertirá el texto en una etiqueta de primer nivel. Para solucionar esto tenemos las tablas de código ASCII, se pueden utilizar tanto el número como el nombre  -->
+
+    <p>La etiqueta <code>&lt;h1&gt;</code> se utiliza para representar títulos de primer nivel</p>
+
+    <!--Símbolo de copyright se utiliza muy a menudo: &copy;
+    Si colocamos & + control + space, nos saldrá una lista de los símbolos que podemos utilizar-->
+
+    
+</body>
+</html>

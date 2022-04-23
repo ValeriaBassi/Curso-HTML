@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Otras etiquetas de bloque</h1>
+    <!--
+        adress -> Se utiliza para aportar información de contacto para el article más cercano o para todo el body.
+        blockquote -> Se utiliza para marcar las citas a otros autores o documentos. Se puede incluir el atributo cite para poner un enlace al documento original o fuente. Tiene un equivalente en el caso de que no queramos que fuese de bloque sino que sea de línea.
+        pre -> Se utiliza para tener código preformateado que necesita ser representado igual que se escribió. Generalmente viene acompañado de la etiqueta de línea <code>.
+        div -> Se usa como división del documento, semánticamente no significa nada, es un contenedor genérico que se usa generalmente para dar estilos a través de css o para usar algo denominado delegación de eventos en javascript.
+        hr -> horizontal rule: Se utiliza para separar elementos en una página. Se utiliza para decirle al navegador que vamos a cambiar de tema.
+    
+    -->
+
+    <address>
+        Tony Stark <br>
+        Malibú 18898 <br>
+        Chaco
+    </address>
+
+    <blockquote cite="https://politica.expansion.mx/sociedad/2019/04/14/politicacero-poder-vida-y-muerte-10-frases-de-game-of-thrones#:~:text=A%20veces%20no%20hay%20una,menos%20grave%20que%20las%20otras".&text=Nunca%20olvides%20lo%20que%20eres,nunca%20lo%20usarán%20para%20herirte".&text=El%20poder%20reside%20donde%20los%20hombres%20creen%20que%20reside.">
+        <p>
+            "Nunca olvides lo que eres, el resto del mundo no lo hará. Llévalo como una armadura y nunca lo usarán para herirte"
+        </p>
+    </blockquote> <!--No se convertirá en un enlace mediante el atributo cite, sino que le estamos brindando información al navegador sobre de dónde viene estamos sacando la cita.-->
+
+    <pre>
+                Hola!
+        Como va?
+    </pre> <!--Notar que si hago tabulaciones se mantienen-->
+    <div>
+        <h2>Nombre</h2>
+        <p>Email</p>
+        <p>Direccion</p>
+    </div> <!--El contenido dentro de un div debe estar relacionado, no sería correcto por ejemplo poner dos usuarios en el mismo div, sino generar otro div.-->
+
+    <hr> <!--No se utiliza para dibujar líneas, es para informar al navegador que vamos a cambiar de temática-->
+
+    <h2>Otro tema</h2>
+    
+</body>
+</html>

@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Las listas en HTML sirven para listar contenido. En función del tipo de contenido de nuestra lista tenemos tres tipos de lista:
     
-</body>
+    ul -> unordered list: Se utilizan cuando el orden de los elementos no influye (listas de compra)
+
+    ol -> ordered list: Se utilizan cuando el orden de los elementos es importante (top 10)
+
+     Cada elemento de la lista se representa con la etiqueta <li> tanto en las ul como en las ol
+
+    dl -> definition list: Se utilizan para hacer una lista de definiciones (diccionario). Muy poco utilizadas.
+
+    Cada elemento de una lista de definición lleva dos etiquetas:
+
+    dt -> definition term: Se utiliza para definir el término de la definición.
+    dd -> definition description: Se utiliza para definir la descripción de la definición.
+-->
+
+    <h1>Listas</h1>
+
+    <h2>Listas desordenadas</h2>
+    <nav>
+      <ul>
+        <li>Inicio</li>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Linkedin</li>
+        <li>Twitter</li>
+      </ul>
+    </nav>
+
+    <ul>
+      <li>Pan</li>
+      <!-- li : list item -->
+      <li>Huevos</li>
+      <li>Leche</li>
+      <li>Harina</li>
+      <li>Manteca</li>
+    </ul>
+
+    <h2>Listas ordenadas</h2>
+
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ol>
+
+    <h2>Listas de definición</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        HyperText Markup Language: Es un lenguaje de marcado que se usa para
+        estructurar datos.
+      </dd>
+      <dt>CSS</dt>
+      <dd>
+        Cascade style sheets: Es un lenguaje de diseño que se utiliza para dar
+        estilos al HTML.
+      </dd>
+      <dt>Javascript</dt>
+      <dd>
+        JavaScript: Es un lenguaje de programación de alto nivel que se utiliza
+        para dar interactividad a un sitio web.
+      </dd>
+    </dl>
+
+    <!--No se suelen utilizar-->
+
+    <h2>Listas anidadas y atributos</h2>
+
+    <!--Se pueden construir listas anidadas teniendo en uno de los li otro ul/ol según sea necesario-->
+
+    <ul>
+      <li>
+        HTML
+        <ol>
+          <li>Estructura</li>
+          <li>Sintaxis</li>
+          <li>Etiquetas</li>
+        </ol>
+      </li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ul>
+
+    <!--Atributos de las listas
+    
+    ol ->
+        type: Estilo de numeración (1, A, a, I, i)
+        start: Inicio de la secuencia (un número)
+    ul ->
+        type: Estilos de los items (disc, square, circle)-->
+
+    <h2>Atributos</h2>
+    <ul type="square">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+
+    <!--Desde css las opciones son practicamente infinitas-->
+
+    <ol type="A" start="2">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+                
+  </body>
 </html>

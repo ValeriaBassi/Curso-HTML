@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--La estructura básica de un formulario se compone de 4 elementos:
+
+    form -> Es la etiqueta que engloba nuestro formulario
+    label -> Sirve para escribir el nombre del campo a rellenar. Debe tener el atributo for al cual se le indica un id que lo que hará será emparejar el label con su input correspondiente.
+    input -> Sirve para crear un campo que permitirá al usuario interactuar. El único atributo obligatorio del input es name.
+    button -> Crea un botón que permitirá enviar el formulario-->
+  <body>
+    <h1>Estructura básica de un formulario</h1>
+
+    <form action="">
+      <label>Nombre</label>
+      <input />
+      <button>Enviar formulario</button> <!--A donde se va a enviar la información es lo que ponemos en el action, generalmente lo pausamos y después lo enviamos desde javascript-->
+    </form>
+
+    <h1>Asociar input y label</h1>
+    
+    <form action="">
+        <label for="name">Nombre</label>
+        <input name="" id="name">
+        <button>Enviar</button>
+    </form> <!--También se puede hacer colocando el input dentro del label, pero no es una práctica muy común porque a la hora de dar estilos a un formulario el hecho de tener el label y el input en el mismo bloque no nos permite jugar tanto con los elementos.-->
+    
+  </body>
+</html>

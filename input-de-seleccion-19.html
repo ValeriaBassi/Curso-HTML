@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+    radio -> Permite seleccionar una opción de un grupo de opciones relacionadas.
+    checkbox -> Permite seleccionar una o varias opciones de un grupo de opciones relacionadas.
+    select -> Crea una lista de opciones donde podemos seleccionar una o varias opciones.
+    Cada opcion de la lista ira dentro de una etiqueta <option>. Realmente no son un input, son una etiqueta aparte.
+    Si tenemos muchas opciones podemos ordenarlas por categorías a través de la etiqueta <optgroup> con el atributo label para nombrar la categoría.
+-->
+<body>
+    <h1>Inputs de selección</h1>
+    <h2>Radio</h2>
+    <form>
+        <label>Masculino <input type="radio" name="genero" value="masculino" ></label> <!--El atributo value nos sirve para decirle al formulario cuando lo enviemos que valor es el que contiene el elemento--> 
+        <label>Femenino <input type="radio" name="genero" value="femenino"></label>
+        <label>Otro <input type="radio" name="genero" value="otro" checked></label><!--Checked es un atributo booleano, selecciona una opción por defecto-->
+        <!--Con el atributo name le estamos diciendo al navegador que todos pertenecen a la misma categoría y por lo tanto solo vamos a poder seleccionar 1-->
+        
+    </form>
+
+    <h2>Checkbox</h2>
+    <h3>Lenguajes que conoces</h3>
+    <form>
+        <label>
+            <div><label >HTML<input type="checkbox" name="languages" value="html" checked></label></div>
+            <div><label >CSS<input type="checkbox" name="languages" value="css" checked></label></div> <!--Se pueden poner mas checked, a diferencia de el input radio-->
+            <div><label >Javascript<input type="checkbox" name="languages" value="javascript"></label></div>
+            <div><label >C#<input type="checkbox" name="languages" value="c#"></label></div>
+        </label>
+    </form>
+
+    <h2>Elemento select básico</h2>
+</body>
+</html>
