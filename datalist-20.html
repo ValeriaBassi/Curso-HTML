@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--Los elementos datalist son muy similares a los select solo que incluyen un filtro para que se pueda buscar de una manera más sencilla-->
+<body>
+    <h1>Datalist</h1>
+
+    <form>
+        <input type="list" list="mascotas">
+        <datalist id="mascotas"> <!--necesita un id que se corresponda con la lista-->
+            <option value="Perro">
+            <option value="Gato">
+            <option value="Conejo">
+            <option value="Tortuga">
+            <option value="Hamster">hámster</option> 
+        </datalist>
+    </form> <!--La opción que sale primero en el datalist es el valor del value-->
+    <!--El buscador no busca por el inicio de la palabra sino la palabra que contenga las letras que nosotros buscamos-->
+</body>
+</html>

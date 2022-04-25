@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--Este atributo nos ayuda a optimizar la página y que corra mas rápido.
+Internet explorer no corre webp, ni acepta srcset, por lo que necesitamos una copia de seguridad para que cargue algo (usando src)-->
+<body>
+   <h1>Atributo srcset</h1> 
+
+   <img srcset="assets/img/WEBP.webp, assets/img/WEBP2.webp 3x" alt="Pikachu"> <!--El 3x representa la condición, es decir que si el DPR es de tres va a cargar esa imagen. Si le damos a inspeccionar y vamos a network, en un DPR 1 la imagen cargada es WEBP.webp si le subimos el DPR (por encima de 300) y le damos a recargar la imagen cargada sera WEBP2.webp-->
+</body>
+</html>

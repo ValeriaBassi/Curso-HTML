@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--
+    fieldset -> Se utiliza para agrupar elementos dentro de un formularios.
+    legend -> Representa una etiqueta para el contenido de el fieldset.
+    file -> Este input se utiliza para cargar archivos y subirlos desde el formulario.
+    meter -> Representa un valor dentro de un rango conocido.
+    progress -> Representa un progreso de una tarea. 
+    textarea -> Representa una caja de texto en la cual introducir texto.
+-->
+  <body>
+    <h1>Más elementos para formularios</h1>
+    <form>
+      <fieldset>
+        <legend>Datos personales</legend>
+        <div>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" />
+        </div>
+
+        <div>
+          <label for="surname">Apellido</label>
+          <input type="text" id="surname" />
+        </div>
+        <div><input type="file"></div>
+        <div><label for="fuel">Combustible</label><meter id="fuel" min="0" max="100" value="10" low="30" high="75" optimum="50"></meter></div> <!--No se utiliza mucho, y los estilos se modifican con css-->
+        <div><label for="task">tarea 1</label></div>
+        <div><progress id="task" max="100" value="75"></progress></div> <!--No se utiliza mucho, hay otras opciones-->
+        <div><label for="message">Mensaje</label></div>
+        <div><textarea name="" id="message" cols="30" rows="10"></textarea></div> <!--Desde css se puede bloquear para que no se pueda modificar el tamaño de la caja-->
+        <div><button>Enviar</button></div>
+        
+      </fieldset>
+    </form>
+
+    <h2>Atributos para formularios</h2>
+
+    <!--
+        placeholder -> Da una pista de lo que el usuario debe introducir.
+        required -> indica que el campo es obligatorio.
+        readonly -> Hace que un campo sea de solo lectura.
+        min - max -> Indica el rango de valores que puede tomar el campo.
+        maxlenght - minlenght -> Indica el rango de caracteres que puede tomar el campo.
+        selected -> Equivale a checked en los select, sirve para establece un opción por defecto.
+        disabled -> Desactiva un campo, no se podrá escribir en él.
+        autofocus -> Para poner el foco por defecto al cargar el formulario, es decir que simula que el usuario ha hecho click.
+    -->
+    <form>
+        <div><input type="text" placeholder="Introduce tu nombre" required></div> <!--El required se puede borrar al inspeccionar el elemento, por lo que se hacen más validaciones por fuera de html, es tan sólo una primera medida de seguridad, y le avisa al usuario que el usuario es obligatorio-->
+        <div><input type="text" value="Hola" readonly></div> <!--Para campos cuyo valor ya está predefinido y no se debería cambiar, el valor se envía al contrario de lo que pasaría con disabled-->
+        <div><input type="text" value="Hola" disabled></div> <!--No se envía la información-->
+ 
+        <div><select name="numbers">
+            <option value="one">1</option>
+            <option value="two" selected>2</option>
+        </select></div>
+
+        <div><input type="number" min="5" max="50"></div>
+        <div><input type="text" minlength="4" maxlength="30" required autofocus></div>
+
+        <div><button>Enviar</button></div>
+
+        <!--Nota: el widget que aparece es el que viene por defecto en el navegador, pero se pueden modificar sus estilos a través de css y desde javascript su comportamiento-->
+        <!--Hay muchos mas atributos que se pueden buscar en la documentación-->
+    </form>
+  </body>
+</html>

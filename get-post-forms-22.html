@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--Saber cuál es la diferencia entre el método de envío get y post no nos sirve mucho para html, pero al pasar a javascript nos resulta útil
+
+    Método get -> Es el método que se ejecuta cuando nosotros entramos a una página a través de una URL.
+    Método post -> Envío de formulario a través de la parte de "atrás" de la página por llamarlo de alguna manera. El comportamiento es distinto, nos da un error 405-->
+  <body>
+    <h1>Envío get vs post</h1>
+    <form action="enviar.html" method="post">
+      <!--Este archivo no existe y nos va a dar error. El método por defecto es el método get-->
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" placeholder="Nombre" />
+      <label for="surname">Apellido</label>
+      <input type="text" id="surname" name="surname" placeholder="Apellido" />
+      <input type="submit"/>
+    </form>
+
+    <!--Si nosotros no colocamos los atributos name en los campos, no estamos enviando información realmente por lo que nos aparecerá la siguiente URL
+    http://127.0.0.1:5500/enviar.html?
+    En cambio si colocamos los atributos aparecerá la siguiente
+    http://127.0.0.1:5500/enviar.html?nombre=&apellido=
+    En este caso los campos han sido enviados vacíos
+    Si enviamos datos
+    http://127.0.0.1:5500/enviar.html?nombre=Valeria&apellido=Bassi
+
+    Si lo cambiara por POST
+    Aparecerá el mensaje de error "Esta página no funciona"
+    y la siguiente URL 
+    http://127.0.0.1:5500/enviar.html
+    para ver cuales son los datos que estamos enviando inspeccionamos y vamos a la pestaña de network/red
+    al recargar vemos el error en el index.html y vemos los datos en la parte de payload, en form data.
+
+-->
+  </body>
+</html>

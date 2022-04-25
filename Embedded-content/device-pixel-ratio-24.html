@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<!--
+    DPR (Device pixel ratio)
+        Es la relación que existe entre los pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles para "pintar" contenido.
+        DPR = pixeles reales / pixeles disponibles
+    Es un concepto muy importante a la hora de hacer páginas web responsive.
+    Viewport -> Es una medida que se utiliza para definir el tamaño de la ventana del navegador.
+    https://whatismyviewport.com
+
+    DRP: 1.00
+    Cuando trabajamos en un móvil, el valor de DPR cambia. Para ver la versión móvil podemos inspeccionar el elemento y convertirlo al modelo de móvil.
+    
+    No es recomendable usar la misma imagen para escritorio que para móvil, ya que el tamaño de la imagen puede ser muy grande y pesar demasiado aún cuando lo acomodemos al tamaño de la pantalla.
+
+    Para evitar esto, podemos usar una imagen con una relación de aspecto similar a la de la pantalla del móvil. para eso usamos srcset.
+-->
+<body>
+    <h1>Device pixel ratio</h1>
+    <img src="assets/img/SVG.svg" width="300" alt="asd">
+    <!--No es recomendarle modificar los tamaños desde html, solo los usamos para demostrar el ejemplo-->
+</body>
+</html>

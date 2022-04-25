@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--la etiqueta picture hace algo muy parecido a lo que haría srcset, pero es un poco más moderna y sigue siendo experimental. Algunos navegadores no la soportan, pero si es soportada por navegadores modernos. Nos dá más opciones que el atributo srcset-->
+<body>
+    <picture>
+        <source srcset="assets/img/WEBP.webp, assets/img/WEBP2.webp"> <!--Dentro de la etiqueta picture va la etiqueta source-->
+        <img src="assets/img/JPG.jpg" alt="Pikachu"> <!--Esta es la copia de seguridad-->
+    </picture>
+    <!--Cuando usamos la etiqueta picture tenemos que poner el fallback o la copia de seguridad de forma obligatoria-->
+</body>
+</html>
